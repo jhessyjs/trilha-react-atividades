@@ -6,8 +6,7 @@ import { useState } from "react";
 function App() {
   const [contadores, setContadores] = useState([]);
   const [unidadePorClick, setUnidadePorClick] = useState(0);
-  //const nomeDaClasse = "button";
-
+  
   const adicionarContador = () => {
     setContadores((contadoresAtuais) => contadoresAtuais.concat(new Date().getTime()));
   }
@@ -18,10 +17,8 @@ function App() {
 
   const removeContador = (idContador) => {
     setContadores((contadores) => {
-      console.log("remover contador: ", idContador);
-      console.log(contadores);
       return contadores.filter((id) => {
-        if (id !== idContador) return id;
+        return id !== idContador;
       });
     })
   }
