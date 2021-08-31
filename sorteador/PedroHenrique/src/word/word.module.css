@@ -1,0 +1,47 @@
+.display{
+    display:flex;
+    flex-wrap: wrap;
+    margin:0px;
+    padding: 10px;
+}
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+.sorteado{
+    margin: 5px;
+    width: 200px;
+    height: 32px;
+}
+li{
+    padding:5px;
+    margin:5px;
+    border:1px solid blue;
+    text-align: left;
+    vertical-align: middle;
+    list-style-type:none;
+    white-space: nowrap;
+}
+.remove-word{  
+    height: 24px;
+    width:24px;
+    color: red;
+    border:none;
+    /* border: 1px solid lightcoral; */
+    background-color: inherit;
+    text-align: center;
+    float: right;
+
+}
+.remove-word:hover{
+    cursor: pointer;
+    animation: mymove 1s ;
+    animation-fill-mode: forwards;
+    transform: scale(1.5);  
+}
+@keyframes mymove {
+    from {background-color:inherit;}
+    to {background-color: lightcoral;}
+  }
