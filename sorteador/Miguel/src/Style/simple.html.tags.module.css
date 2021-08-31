@@ -1,0 +1,44 @@
+.display{
+    display:flex;
+    flex-wrap: wrap;
+    margin:0px;
+    padding: 10px;
+}
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+.sorteado{
+    margin: 5px;
+    width: 200px;
+    height: 32px;
+}
+li{
+    padding:5px;
+    margin:5px;
+    text-align: center;
+    list-style-type:none;
+    white-space: nowrap;
+}
+ol{
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+}
+.remove-word{  
+    height: 24px;
+    width:24px;
+    border:none;
+    background-color: inherit;
+    text-align: center;
+    float: right;
+    transition: all .3s;
+    border-radius: 5px;
+}
+.remove-word:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    background: #dfdfdf;
+}
